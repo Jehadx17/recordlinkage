@@ -835,8 +835,7 @@ class FuseCore:
             A pandas.DataFrame with resolved/fused data.
 
         """
-
-        if not isinstance(predictions, (type(None), pd.Series, type(list))):
+        if not isinstance(predictions, (type(None), pd.Series, list)):
             raise ValueError('Predictions must be a pandas Series, list, or None.')
 
         if predictions is not None:
